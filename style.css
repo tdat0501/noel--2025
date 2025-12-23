@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #000b1a; /* Màu xanh đêm */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none; /* Giúp chuột xuyên qua ảnh */
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Làm mượt chuyển động */
+}
+
+.title {
+    position: relative;
+    color: #fff;
+    font-size: 5vw;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    z-index: 10; /* Đảm bảo chữ nằm trên một số lớp ảnh */
+}
