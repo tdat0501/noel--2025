@@ -263,7 +263,7 @@
             const tex = new THREE.CanvasTexture(canvas);
             const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true, blending: THREE.AdditiveBlending });
             titleMesh = new THREE.Mesh(new THREE.PlaneGeometry(90, 15), mat);
-            titleMesh.position.set(0, 50, 0);
+            titleMesh.position.set(0, 45, 0);
             scene.add(titleMesh);
 
             // Vandiep
@@ -444,5 +444,6 @@
     </script>
 </body>
 </html>
+
 
 
